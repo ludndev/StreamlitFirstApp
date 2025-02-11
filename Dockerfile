@@ -80,7 +80,7 @@ ENV LD_LIBRARY_PATH="/usr/local/lib/R/lib:/usr/local/lib:/usr/lib/x86_64-linux-g
 RUN R -e "install.packages('RCurl', repos='https://cran.rstudio.com/')"
 
 # Install R package randomForest from source
-RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/randomForest_4.7-1.1.tar.gz", repos=NULL, type="source")'
+RUN R -e 'install.packages("https://github.com/ameudes/StreamlitFirstApp/raw/refs/heads/main/randomForest_4.7-1.1.tar.gz", repos=NULL, type="source")'
 
 # Clone Streamlit application repository
 # RUN git clone https://github.com/ameudes/StreamlitFirstApp StreamlitFirstApp

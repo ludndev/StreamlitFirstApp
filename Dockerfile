@@ -41,6 +41,8 @@ RUN apt-get install -y \
   texlive \
   texlive-fonts-extra
 
+RUN apt-get install -y libtool autoconf automake
+
 # Add Ondřej's PHP repository
 RUN add-apt-repository ppa:ondrej/php
 
